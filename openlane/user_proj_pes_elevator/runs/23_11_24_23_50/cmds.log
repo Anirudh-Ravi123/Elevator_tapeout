@@ -1,0 +1,24 @@
+Fri Nov 24 18:20:04 UTC 2023 - Executing "openroad -exit -no_init -python /openlane/scripts/odbpy/lefutil.py get_metal_layers -o /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/layers.list /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Fri Nov 24 18:20:04 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/merged.nom.lef -i /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Fri Nov 24 18:20:04 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/merged.min.lef -i /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Fri Nov 24 18:20:04 UTC 2023 - Executing "/openlane/scripts/mergeLef.py -o /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/merged.max.lef -i /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} |& tee /dev/null"
+
+Fri Nov 24 18:20:04 UTC 2023 - Executing "python3 /openlane/scripts/mergeLib.py --output /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/synthesis/merged.lib --name sky130A_merged /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Fri Nov 24 18:20:05 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/synthesis/trimmed.lib.exclude.list --output /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/synthesis/trimmed.lib /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/synthesis/merged.lib"
+
+Fri Nov 24 18:20:05 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/cts/cts.lib.exclude.list --output /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/cts/cts.lib /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Fri Nov 24 18:20:05 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/cts/cts-fastest.lib.exclude.list --output /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/cts/cts-fastest.lib /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+
+Fri Nov 24 18:20:06 UTC 2023 - Executing "python3 /openlane/scripts/libtrim.py --cell-file /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/cts/cts-slowest.lib.exclude.list --output /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/cts/cts-slowest.lib /home/anirudhravi/asic/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+
+Fri Nov 24 18:20:06 UTC 2023 - Executing "python3 /openlane/scripts/new_tracks.py -i /home/anirudhravi/asic/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/tmp/routing/config.tracks"
+
+Fri Nov 24 18:20:06 UTC 2023 - Executing "echo {OpenLane 30ee1388932eb55a89ad84ee43997bfe3a386421} > /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/OPENLANE_VERSION"
+
+Fri Nov 24 18:20:06 UTC 2023 - Executing "bash -c {verilator  --lint-only  -Wall  --Wno-DECLFILENAME  --top-module user_proj_pes_elevator  home/anirudhravi/Elevator_tapeout/verilog/rtl/defines.v home/anirudhravi/Elevator_tapeout/verilog/rtl/user_proj_pes_elevator.v home/anirudhravi/Elevator_tapeout/verilog/rtl/pes_elevator.v -Wno-fatal --relative-includes |& tee /home/anirudhravi/Elevator_tapeout/openlane/user_proj_pes_elevator/runs/23_11_24_23_50/logs/synthesis/linter.log /dev/null}"
+
